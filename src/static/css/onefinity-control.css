@@ -1,5 +1,6 @@
 #control {
   display: flex;
+  user-select: none;
 }
 
 .row {
@@ -29,4 +30,9 @@
   height: 90px;
   margin: 5px 5px;
 }
+
+.fa.fa-rotate-45 { transform: rotate(45deg); }
+.fa.fa-rotate-135 { transform: rotate(135deg); }
+.fa.fa-rotate-225 { transform: rotate(225deg); }
+.fa.fa-rotate-315 { transform: rotate(315deg); }
 

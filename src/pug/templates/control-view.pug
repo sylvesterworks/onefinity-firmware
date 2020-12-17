@@ -40,14 +40,18 @@ script#control-view-template(type="text/x-template")
               col(style="width:100px")
             tr
               td(style="height:100px",align="center")
-                button(:class="control-button",@click="jog_fn(-1,1,0,0)") &#x2b01
+                button(:class="control-button",@click="jog_fn(-1,1,0,0)")
+                  .fa.fa-long-arrow-left.fa-rotate-45.fa-2x
               td(style="height:100px",align="center")
-                button(style="height:100px;width:100px",@click="jog_fn(0,1,0,0)") Y+
+                button(style="height:100px;width:100px",@click="jog_fn(0,1,0,0)")
+                  Y+
               td(style="height:100px",align="center")
-                button(style="height:100px;width:100px",@click="jog_fn(1,1,0,0)") &#x2b00
+                button(style="height:100px;width:100px",@click="jog_fn(1,1,0,0)")
+                  .fa.fa-long-arrow-right.fa-rotate-315.fa-2x
               td
               td(style="height:100px",align="center")
-                button(style="height:100px;width:100px",,@click="jog_fn(0,0,1,0)") Z+
+                button(style="height:100px;width:100px",,@click="jog_fn(0,0,1,0)")
+                  Z+
             tr
               td(style="height:100px",align="center")
                 button(style="height:100px;width:100px",@click="jog_fn(-1,0,0,0)") X-
