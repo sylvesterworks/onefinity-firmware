@@ -1,0 +1,32 @@
+#control {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.control-actions { 
+  flex: 400px;
+}
+
+.control-status { 
+  flex-grow: 2;
+}
+
+.control-button {
+  width: 90px;
+  height: 90px;
+  margin: 5px 5px;
+}
+

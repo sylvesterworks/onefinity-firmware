@@ -27,20 +27,20 @@
 
 script#control-view-template(type="text/x-template")
   #control
-
+  
     table(width="99%")
       tr
         td(style="white-space: nowrap;")
           table(table-layout="fixed")
             colgroup
-               col(style="width:100px")
-               col(style="width:100px")
-               col(style="width:100px")
-               col(style="width:5px")
-               col(style="width:100px")
+              col(style="width:100px")
+              col(style="width:100px")
+              col(style="width:100px")
+              col(style="width:5px")
+              col(style="width:100px")
             tr
               td(style="height:100px",align="center")
-                button(style="height:100px;width:100px",@click="jog_fn(-1,1,0,0)") &#x2b01
+                button(:class="control-button",@click="jog_fn(-1,1,0,0)") &#x2b01
               td(style="height:100px",align="center")
                 button(style="height:100px;width:100px",@click="jog_fn(0,1,0,0)") Y+
               td(style="height:100px",align="center")
